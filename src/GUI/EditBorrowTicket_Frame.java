@@ -41,7 +41,6 @@ public class EditBorrowTicket_Frame extends javax.swing.JFrame {
         borrowTicket_Id_TextField = new javax.swing.JPasswordField();
         edit_Button = new javax.swing.JButton();
         chooseMember_Button = new javax.swing.JButton();
-        returnDate_DateChooser = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -114,9 +113,6 @@ public class EditBorrowTicket_Frame extends javax.swing.JFrame {
             }
         });
 
-        returnDate_DateChooser.setDateFormatString("yyyy-MM-dd");
-        returnDate_DateChooser.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -135,8 +131,7 @@ public class EditBorrowTicket_Frame extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(member_Id_TextField)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(chooseMember_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(returnDate_DateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(chooseMember_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel6)
@@ -174,12 +169,8 @@ public class EditBorrowTicket_Frame extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(status_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 1, Short.MAX_VALUE)
-                        .addComponent(returnDate_DateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(30, 30, 30)
+                .addComponent(status_TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addComponent(edit_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
         );
@@ -262,7 +253,6 @@ public class EditBorrowTicket_Frame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JTextField member_Id_TextField;
-    private com.toedter.calendar.JDateChooser returnDate_DateChooser;
     private javax.swing.JTextField staff_Id_TextField;
     private javax.swing.JTextField status_TextField;
     // End of variables declaration//GEN-END:variables

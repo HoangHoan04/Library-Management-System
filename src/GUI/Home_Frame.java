@@ -48,6 +48,8 @@ public class Home_Frame extends javax.swing.JFrame {
         openReturnTicketFrame_Button = new javax.swing.JButton();
         openPurchaseTicketFrameButton = new javax.swing.JButton();
         openPenaltyTicketFrame_Button = new javax.swing.JButton();
+        openStatisticFrame_Button = new javax.swing.JButton();
+        openRoleFrame_Button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -144,6 +146,22 @@ public class Home_Frame extends javax.swing.JFrame {
             }
         });
 
+        openStatisticFrame_Button.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        openStatisticFrame_Button.setText("Thống kê");
+        openStatisticFrame_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openStatisticFrame_ButtonActionPerformed(evt);
+            }
+        });
+
+        openRoleFrame_Button.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        openRoleFrame_Button.setText("Phân quyền");
+        openRoleFrame_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openRoleFrame_ButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout navbar_PanelLayout = new javax.swing.GroupLayout(navbar_Panel);
         navbar_Panel.setLayout(navbar_PanelLayout);
         navbar_PanelLayout.setHorizontalGroup(
@@ -152,17 +170,19 @@ public class Home_Frame extends javax.swing.JFrame {
                 .addGap(130, 130, 130)
                 .addGroup(navbar_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(openBorrowTicketFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(openStaffFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(openStaffFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(openPenaltyTicketFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(46, 46, 46)
                 .addGroup(navbar_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(openBookFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(openReturnTicketFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(openPenaltyTicketFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(openStatisticFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(55, 55, 55)
                 .addGroup(navbar_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(openMember_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(openPurchaseTicketFrameButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(130, Short.MAX_VALUE))
+                    .addComponent(openPurchaseTicketFrameButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(openRoleFrame_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         navbar_PanelLayout.setVerticalGroup(
             navbar_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -177,9 +197,12 @@ public class Home_Frame extends javax.swing.JFrame {
                     .addComponent(openBorrowTicketFrame_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(openReturnTicketFrame_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(openPurchaseTicketFrameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(openPenaltyTicketFrame_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addGroup(navbar_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(openPenaltyTicketFrame_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(openStatisticFrame_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(openRoleFrame_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -236,6 +259,14 @@ public class Home_Frame extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_openPenaltyTicketFrame_ButtonActionPerformed
 
+    private void openStatisticFrame_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openStatisticFrame_ButtonActionPerformed
+        
+    }//GEN-LAST:event_openStatisticFrame_ButtonActionPerformed
+
+    private void openRoleFrame_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openRoleFrame_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_openRoleFrame_ButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel header_Panel;
@@ -248,7 +279,9 @@ public class Home_Frame extends javax.swing.JFrame {
     private javax.swing.JButton openPenaltyTicketFrame_Button;
     private javax.swing.JButton openPurchaseTicketFrameButton;
     private javax.swing.JButton openReturnTicketFrame_Button;
+    private javax.swing.JButton openRoleFrame_Button;
     private javax.swing.JButton openStaffFrame_Button;
+    private javax.swing.JButton openStatisticFrame_Button;
     private javax.swing.JLabel welcome_Label;
     // End of variables declaration//GEN-END:variables
 }

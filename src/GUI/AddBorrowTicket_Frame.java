@@ -35,7 +35,6 @@ public class AddBorrowTicket_Frame extends javax.swing.JFrame {
         member_TextField = new javax.swing.JTextField();
         add_Button = new javax.swing.JButton();
         chooseMember_Button = new javax.swing.JButton();
-        returnDate_DateChooser = new com.toedter.calendar.JDateChooser();
         jLabel8 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         bookItem_Table = new javax.swing.JTable();
@@ -103,9 +102,6 @@ public class AddBorrowTicket_Frame extends javax.swing.JFrame {
                 chooseMember_ButtonActionPerformed(evt);
             }
         });
-
-        returnDate_DateChooser.setDateFormatString("yyyy-MM-dd");
-        returnDate_DateChooser.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel8.setText("Sách trong thư viện");
@@ -196,9 +192,8 @@ public class AddBorrowTicket_Frame extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(chooseMember_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addGap(30, 30, 30)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(returnDate_DateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jLabel5)
+                                .addGap(97, 97, 97))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -237,8 +232,7 @@ public class AddBorrowTicket_Frame extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel8))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(returnDate_DateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(58, 58, 58)
                         .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -340,7 +334,6 @@ public class AddBorrowTicket_Frame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField member_TextField;
     private javax.swing.JButton remove_Button;
-    private com.toedter.calendar.JDateChooser returnDate_DateChooser;
     private javax.swing.JTextField search_TextField;
     private javax.swing.JButton select_Button;
     private javax.swing.JTextField staff_TextField;

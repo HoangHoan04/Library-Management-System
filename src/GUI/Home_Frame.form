@@ -113,19 +113,21 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="openBorrowTicketFrame_Button" max="32767" attributes="0"/>
                       <Component id="openStaffFrame_Button" max="32767" attributes="0"/>
+                      <Component id="openPenaltyTicketFrame_Button" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="openBookFrame_Button" max="32767" attributes="0"/>
                       <Component id="openReturnTicketFrame_Button" max="32767" attributes="0"/>
-                      <Component id="openPenaltyTicketFrame_Button" alignment="0" max="32767" attributes="0"/>
+                      <Component id="openStatisticFrame_Button" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="openMember_Button" max="32767" attributes="0"/>
                       <Component id="openPurchaseTicketFrameButton" max="32767" attributes="0"/>
+                      <Component id="openRoleFrame_Button" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="130" max="32767" attributes="0"/>
+                  <EmptySpace pref="124" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -144,9 +146,13 @@
                       <Component id="openReturnTicketFrame_Button" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="openPurchaseTicketFrameButton" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="openPenaltyTicketFrame_Button" min="-2" pref="50" max="-2" attributes="0"/>
-                  <EmptySpace pref="80" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="openPenaltyTicketFrame_Button" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="openStatisticFrame_Button" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="openRoleFrame_Button" alignment="3" min="-2" pref="53" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="79" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -227,6 +233,28 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openPenaltyTicketFrame_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="openStatisticFrame_Button">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng k&#xea;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openStatisticFrame_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="openRoleFrame_Button">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Ph&#xe2;n quy&#x1ec1;n"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openRoleFrame_ButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

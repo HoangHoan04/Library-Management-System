@@ -63,7 +63,7 @@ public class Login_Frame extends javax.swing.JFrame {
         jLabel4.setText("Mật khẩu");
 
         password_TextField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        password_TextField.setText("12345");
+        password_TextField.setText("123123");
 
         login_Button.setBackground(new java.awt.Color(3, 169, 244));
         login_Button.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N

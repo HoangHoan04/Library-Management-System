@@ -27,7 +27,7 @@ public class AccountDAO {
 
             ps.setString(1, account.getUsername());
             ps.setString(2, account.getPassword());
-            ps.setString(3, account.getRole());
+            ps.setInt(3, account.getRole_Id());
             ps.setInt(4, 1);  
 
             result = ps.executeUpdate();
@@ -134,10 +134,10 @@ public class AccountDAO {
             if (rs.next()) {
                 int id = rs.getInt("account_id");
                 String password = rs.getString("password");
-                String role = rs.getString("role");
+                int role_id = rs.getInt("role_id");
                 String status = rs.getString("status");
                 
-                account = new AccountDTO(id, username, password, role, status);
+                account = new AccountDTO(id, username, password, role_id, status);
             }
             
             Database.closeConnection(connection);
